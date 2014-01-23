@@ -21,6 +21,11 @@
 		C22534751891B26700036661 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22534571891B26700036661 /* UIKit.framework */; };
 		C225347D1891B26700036661 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C225347B1891B26700036661 /* InfoPlist.strings */; };
 		C225347F1891B26700036661 /* WildKingdomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C225347E1891B26700036661 /* WildKingdomTests.m */; };
+		C22534911891B76700036661 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = C225348E1891B76700036661 /* bear.png */; };
+		C22534921891B76700036661 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = C225348F1891B76700036661 /* lion.png */; };
+		C22534931891B76700036661 /* tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = C22534901891B76700036661 /* tiger.png */; };
+		C22534951891C42900036661 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = C22534941891C42900036661 /* grass.png */; };
+		C22534981891D66C00036661 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22534971891D66C00036661 /* CustomTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		C225347A1891B26700036661 /* WildKingdomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WildKingdomTests-Info.plist"; sourceTree = "<group>"; };
 		C225347C1891B26700036661 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C225347E1891B26700036661 /* WildKingdomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildKingdomTests.m; sourceTree = "<group>"; };
+		C225348E1891B76700036661 /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		C225348F1891B76700036661 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		C22534901891B76700036661 /* tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiger.png; sourceTree = "<group>"; };
+		C22534941891C42900036661 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		C22534961891D66C00036661 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		C22534971891D66C00036661 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +128,8 @@
 				C22534651891B26700036661 /* Main.storyboard */,
 				C22534681891B26700036661 /* ViewController.h */,
 				C22534691891B26700036661 /* ViewController.m */,
+				C22534961891D66C00036661 /* CustomTabBarController.h */,
+				C22534971891D66C00036661 /* CustomTabBarController.m */,
 				C225346B1891B26700036661 /* Images.xcassets */,
 				C225345A1891B26700036661 /* Supporting Files */,
 			);
@@ -126,6 +139,10 @@
 		C225345A1891B26700036661 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C22534941891C42900036661 /* grass.png */,
+				C225348E1891B76700036661 /* bear.png */,
+				C225348F1891B76700036661 /* lion.png */,
+				C22534901891B76700036661 /* tiger.png */,
 				C225345B1891B26700036661 /* WildKingdom-Info.plist */,
 				C225345C1891B26700036661 /* InfoPlist.strings */,
 				C225345F1891B26700036661 /* main.m */,
@@ -228,9 +245,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22534951891C42900036661 /* grass.png in Resources */,
 				C225346C1891B26700036661 /* Images.xcassets in Resources */,
+				C22534921891B76700036661 /* lion.png in Resources */,
+				C22534911891B76700036661 /* bear.png in Resources */,
 				C225345E1891B26700036661 /* InfoPlist.strings in Resources */,
 				C22534671891B26700036661 /* Main.storyboard in Resources */,
+				C22534931891B76700036661 /* tiger.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +272,7 @@
 			files = (
 				C225346A1891B26700036661 /* ViewController.m in Sources */,
 				C22534641891B26700036661 /* AppDelegate.m in Sources */,
+				C22534981891D66C00036661 /* CustomTabBarController.m in Sources */,
 				C22534601891B26700036661 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

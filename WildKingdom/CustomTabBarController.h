@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomTabBarController.h
 //  WildKingdom
 //
 //  Created by Andrew Webb on 1/23/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property NSURL* searchURL;
+@interface CustomTabBarController : UITabBarController
+
 @end
