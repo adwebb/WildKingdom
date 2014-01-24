@@ -25,13 +25,13 @@
     
     lions.navigationItem.title = @"Lions";
     lions.title = @"Lions";
-    lions.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5570deb92144c385ceec70843e7bb90c&tags=lion&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_q&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640078560496-58ab1b8f5d5882e2&api_sig=6690085bab82de89f7e2232772fe6846"];
+    lions.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=269c07a66f7133fbfc8bcbb3c9c8d28e&tags=lion&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_z&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640094105823-60fa5928df7d6c9a&api_sig=e4f6c8ad110f90d0f59ce291120c6302"];
     tigers.navigationItem.title = @"Tigers";
     tigers.title = @"Tigers";
-    tigers.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5570deb92144c385ceec70843e7bb90c&tags=tiger&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_q&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640078560496-58ab1b8f5d5882e2&api_sig=69ed8e076893a5b0a1363c6f919a9a2b"];
+    tigers.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=269c07a66f7133fbfc8bcbb3c9c8d28e&tags=tiger&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_z&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640094105823-60fa5928df7d6c9a&api_sig=01ac61711895c5ac22bf517d06af02a4"];
     bears.navigationItem.title = @"Bears";
     bears.title = @"Bears";
-    bears.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5570deb92144c385ceec70843e7bb90c&tags=bear&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_q&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640078560496-58ab1b8f5d5882e2&api_sig=38f919a91368bf9f67172df0832013b9"];
+    bears.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5570deb92144c385ceec70843e7bb90c&tags=bear&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_z&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640078560496-58ab1b8f5d5882e2&api_sig=bcc3f80b91b3a8a1eb801e5a5428b2ef"];
     
     NSArray* controllers = @[lions,tigers,bears];
     

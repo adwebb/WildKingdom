@@ -51,8 +51,10 @@
 {
     UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WildAnimalReuseID" forIndexPath:indexPath];
     
-            //cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tiger"]];
-    cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:animals[indexPath.row][@"url_q"]]]]];
+    
+    UIImageView* imageView = (UIImageView *)[cell viewWithTag:100];
+    
+    imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:animals[indexPath.row][@"url_z"]]]];
     
     return cell;
 }
