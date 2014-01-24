@@ -21,11 +21,12 @@
 		C22534751891B26700036661 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22534571891B26700036661 /* UIKit.framework */; };
 		C225347D1891B26700036661 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C225347B1891B26700036661 /* InfoPlist.strings */; };
 		C225347F1891B26700036661 /* WildKingdomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C225347E1891B26700036661 /* WildKingdomTests.m */; };
-		C22534911891B76700036661 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = C225348E1891B76700036661 /* bear.png */; };
-		C22534921891B76700036661 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = C225348F1891B76700036661 /* lion.png */; };
-		C22534931891B76700036661 /* tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = C22534901891B76700036661 /* tiger.png */; };
 		C22534951891C42900036661 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = C22534941891C42900036661 /* grass.png */; };
 		C22534981891D66C00036661 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22534971891D66C00036661 /* CustomTabBarController.m */; };
+		C2AA2E0018930BEC00FEE07D /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = C2AA2DFF18930BEC00FEE07D /* bear.png */; };
+		C2AA2E0618930D8900FEE07D /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = C2AA2E0518930D8900FEE07D /* lion.png */; };
+		C2AA2E0818930FAD00FEE07D /* lionicon2.png in Resources */ = {isa = PBXBuildFile; fileRef = C2AA2E0718930FAD00FEE07D /* lionicon2.png */; };
+		C2AA2E0A1893109C00FEE07D /* tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = C2AA2E091893109C00FEE07D /* tiger.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +59,13 @@
 		C225347A1891B26700036661 /* WildKingdomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WildKingdomTests-Info.plist"; sourceTree = "<group>"; };
 		C225347C1891B26700036661 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C225347E1891B26700036661 /* WildKingdomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildKingdomTests.m; sourceTree = "<group>"; };
-		C225348E1891B76700036661 /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
-		C225348F1891B76700036661 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
-		C22534901891B76700036661 /* tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiger.png; sourceTree = "<group>"; };
 		C22534941891C42900036661 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
 		C22534961891D66C00036661 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		C22534971891D66C00036661 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		C2AA2DFF18930BEC00FEE07D /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		C2AA2E0518930D8900FEE07D /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		C2AA2E0718930FAD00FEE07D /* lionicon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lionicon2.png; sourceTree = "<group>"; };
+		C2AA2E091893109C00FEE07D /* tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiger.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,10 +141,11 @@
 		C225345A1891B26700036661 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C2AA2E0718930FAD00FEE07D /* lionicon2.png */,
+				C2AA2E091893109C00FEE07D /* tiger.png */,
+				C2AA2E0518930D8900FEE07D /* lion.png */,
+				C2AA2DFF18930BEC00FEE07D /* bear.png */,
 				C22534941891C42900036661 /* grass.png */,
-				C225348E1891B76700036661 /* bear.png */,
-				C225348F1891B76700036661 /* lion.png */,
-				C22534901891B76700036661 /* tiger.png */,
 				C225345B1891B26700036661 /* WildKingdom-Info.plist */,
 				C225345C1891B26700036661 /* InfoPlist.strings */,
 				C225345F1891B26700036661 /* main.m */,
@@ -246,12 +249,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C22534951891C42900036661 /* grass.png in Resources */,
+				C2AA2E0618930D8900FEE07D /* lion.png in Resources */,
+				C2AA2E0018930BEC00FEE07D /* bear.png in Resources */,
 				C225346C1891B26700036661 /* Images.xcassets in Resources */,
-				C22534921891B76700036661 /* lion.png in Resources */,
-				C22534911891B76700036661 /* bear.png in Resources */,
 				C225345E1891B26700036661 /* InfoPlist.strings in Resources */,
+				C2AA2E0818930FAD00FEE07D /* lionicon2.png in Resources */,
 				C22534671891B26700036661 /* Main.storyboard in Resources */,
-				C22534931891B76700036661 /* tiger.png in Resources */,
+				C2AA2E0A1893109C00FEE07D /* tiger.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				C22534841891B26700036661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C22534851891B26700036661 /* Build configuration list for PBXNativeTarget "WildKingdomTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				C22534871891B26700036661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

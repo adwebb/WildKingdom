@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate, UITabBarDelegate>
+@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 {
     NSArray* animals;
     __weak IBOutlet UICollectionView *animalCollectionView;
@@ -36,6 +36,28 @@
     
 }
 
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    if (UIInterfaceOrientationIsPortrait(fromInterfaceOrientation))
+    {
+        [self prefersStatusBarHidden];
+        UICollectionViewFlowLayout* horizontalFlow = [UICollectionViewFlowLayout new];
+        horizontalFlow.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        horizontalFlow.itemSize = CGSizeMake(320, 240);
+    
+        animalCollectionView.collectionViewLayout = horizontalFlow;
+    }else{
+        UICollectionViewFlowLayout* verticalFlow = [UICollectionViewFlowLayout new];
+        verticalFlow.scrollDirection = UICollectionViewScrollDirectionVertical;
+        verticalFlow.itemSize = CGSizeMake(150, 150);
+        
+        animalCollectionView.collectionViewLayout = verticalFlow;
+        
+    }
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -54,7 +76,7 @@
     
     UIImageView* imageView = (UIImageView *)[cell viewWithTag:100];
     
-    imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:animals[indexPath.row][@"url_z"]]]];
+    imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:animals[indexPath.row][@"url_n"]]]];
     
     return cell;
 }

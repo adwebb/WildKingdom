@@ -9,7 +9,7 @@
 #import "CustomTabBarController.h"
 #import "ViewController.h"
 
-@interface CustomTabBarController ()
+@interface CustomTabBarController ()<UITabBarDelegate>
 
 @end
 
@@ -18,20 +18,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController* lions = [storyboard instantiateViewControllerWithIdentifier:@"Animals"];
     ViewController* tigers = [storyboard instantiateViewControllerWithIdentifier:@"Animals"];
     ViewController* bears = [storyboard instantiateViewControllerWithIdentifier:@"Animals"];
     
-    lions.navigationItem.title = @"Lions";
     lions.title = @"Lions";
-    lions.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=269c07a66f7133fbfc8bcbb3c9c8d28e&tags=lion&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_z&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640094105823-60fa5928df7d6c9a&api_sig=e4f6c8ad110f90d0f59ce291120c6302"];
-    tigers.navigationItem.title = @"Tigers";
+    lions.tabBarItem.image = [UIImage imageNamed:@"lionicon2"];
+    lions.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=688e3c3cb5d57f1a49a8caaaacba3879&tags=lion&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_n&per_page=10&page=1&format=json&nojsoncallback=1"];
+
     tigers.title = @"Tigers";
-    tigers.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=269c07a66f7133fbfc8bcbb3c9c8d28e&tags=tiger&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_z&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640094105823-60fa5928df7d6c9a&api_sig=01ac61711895c5ac22bf517d06af02a4"];
-    bears.navigationItem.title = @"Bears";
+    tigers.tabBarItem.image = [UIImage imageNamed:@"tiger"];
+    tigers.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=688e3c3cb5d57f1a49a8caaaacba3879&tags=tiger&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_n&per_page=10&page=1&format=json&nojsoncallback=1"];
     bears.title = @"Bears";
-    bears.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5570deb92144c385ceec70843e7bb90c&tags=bear&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_z&per_page=10&page=1&format=json&nojsoncallback=1&auth_token=72157640078560496-58ab1b8f5d5882e2&api_sig=bcc3f80b91b3a8a1eb801e5a5428b2ef"];
+    bears.tabBarItem.image = [UIImage imageNamed:@"bear"];
+    bears.searchURL = [NSURL URLWithString:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=688e3c3cb5d57f1a49a8caaaacba3879&tags=bear&license=1%2C2%2C3%2C4%2C5%2C6&extras=url_n&per_page=10&page=1&format=json&nojsoncallback=1"];
     
     NSArray* controllers = @[lions,tigers,bears];
     
